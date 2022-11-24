@@ -591,34 +591,37 @@
                 </div>
                     
 
-                    <form action="" class="conatct__form grid">
+                    <form action="https://formsubmit.co/mibzar17@gmail.com" method="POST" class="conatct__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" placeholder="Your Name" class="contact__input">
+                                <input type="text" name="name" placeholder="Your Name" class="contact__input">
                             </div>
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" placeholder="ex@gmail.com" class="contact__input">
+                                <input type="email" name="email"  placeholder="ex@gmail.com" class="contact__input">
                             </div>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Project</label>
-                            <input type="text" placeholder="Tell me your project" class="contact__input">
+                            <input type="text" name="subject" placeholder="Tell me your project" class="contact__input">
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" placeholder="Write your message" class="contact__input"></textarea>
+                            <textarea name="comments" id="" cols="0" rows="7" placeholder="Write your message" class="contact__input"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
+                            <button href="#" type="submit"  class="send button button--flex">
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
+
+                            <input type="hidden" name="_next" value="http://localhost:5500/">
+                            <input type="hidden" name="_captcha" value="false">
+
                         </div>
 
 
