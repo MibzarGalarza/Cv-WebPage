@@ -117,6 +117,14 @@ img {
   padding: 2rem 0 4rem;
 }
 
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
@@ -203,7 +211,7 @@ img {
     flex-direction: column;
     align-items: center;
     font-size: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     color: #fff;
 }
 
@@ -393,20 +401,21 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img{
-  width: 200px;
+  width: 100px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
 }
 
 .about__description{
-  text-align: center;
+  text-align: center !important;
   margin-bottom: var(--mb-2-5);
+  font-weight: var(--font-semi-bold);
 }
 
 .about__info{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly !important;
   margin-bottom: var(--mb-2-5);
 }
 .about__info-title{
