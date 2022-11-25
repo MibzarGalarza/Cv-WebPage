@@ -74,7 +74,10 @@ container.addEventListener("mousemove", (e) => {
     card.style.transform = `rotateY(170deg) rotateX(30deg)`;
  
   });
-/*==================== SERVICES MODAL ====================*/
+
+
+  
+/*==================== SERVICES MODAL AND MOVEMENT ====================*/
 
 const modalViews = document.querySelectorAll('.services__modal');
 const modalBtns = document.querySelectorAll('.services__button');
