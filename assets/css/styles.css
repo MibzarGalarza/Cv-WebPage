@@ -789,6 +789,11 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
+.porfolio__bottom{
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
 
 .portfolio__button:hover .button__icon{
   transform: translateX(.25rem);
@@ -866,6 +871,20 @@ img {
   width: 232px;
   justify-self: center;
 }
+
+.portfolio__icons{
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  color: var(--first-color);
+  margin-left: 1rem;
+  transition: .3s;
+  display: inline-flex;
+}
+
+.portfolio__icons:hover{
+  transform: translateY(.2rem);
+}
+
 
 /*==================== CONTACT ME ====================*/
 
@@ -1030,6 +1049,19 @@ img {
   .portfolio__img{
     width: 200px;
   }
+
+  .portfolio__icons{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-left: .2rem;
+    transition: .3s;
+    display: inline-flex;
+  }
+  
+  .portfolio__icons:hover{
+    transform: translateY(.2rem);
+  }
+
   .nav__menu{
     padding: 2rem .25rem 4rem;
   }
@@ -1063,7 +1095,7 @@ img {
   }
 }
 /* For medium devices */
-@media screen and (min-width: 568px){
+@media screen and (min-width: 650px){
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1114,6 +1146,7 @@ img {
   .section__subtitle{
     margin-bottom: 4rem;
   }
+
 
   .header{
     top: 0;
