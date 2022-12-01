@@ -6,7 +6,6 @@ const navClose = document.getElementById("nav-close")
 
 
 
-
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
