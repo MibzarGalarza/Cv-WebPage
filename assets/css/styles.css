@@ -288,11 +288,21 @@ img {
 .home__blob{
   width:285px;
   fill:var(--first-color);
+  position: static;
+  z-index: 1;
 }
 
 .home__blob-img{
-  width:100px;
-  
+  width: 110px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 6rem;
+  margin-left: 5rem;
+}
+
+.home__img{
+  display: flex;
 }
 
 .home__data{
@@ -405,6 +415,7 @@ img {
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
+  background-color: #1D6C70;
 }
 
 .about__description{
@@ -634,6 +645,7 @@ img {
   color: var(--text-color-light);
 }
 
+
 .qualification__rounder{
  display: inline-block;
  width: 13px;
@@ -657,6 +669,8 @@ img {
 
 .qualification__active[data-content]{
   display: block;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .qualification__button.qualification__active{
@@ -871,6 +885,7 @@ img {
 .project__img{
   width: 232px;
   justify-self: center;
+  margin-bottom: 1rem;
 }
 
 .portfolio__icons{
@@ -891,11 +906,13 @@ img {
 
 .contact__container{
   row-gap: 3rem;
+  padding: 1rem;
 }
 
 .contact__information{
   display: flex;
   margin-bottom: var(--mb-2);
+  margin-top: 1rem;
 }
 
 .contact__icon{
@@ -1074,6 +1091,12 @@ img {
   }
   .home__blob{
     width: 180px;
+    margin-top: 2rem;
+
+  }
+  .home__blob-img{
+    width: 70px;
+    margin-bottom: 1rem;
   }
   .skills__title{
     font-size: var(--normal-font-size);
@@ -1106,6 +1129,7 @@ img {
   .home__img{
     order: 1;
     justify-self: center;
+    display: flex;
   }
   .about__container,
   .skills__container,
@@ -1115,6 +1139,19 @@ img {
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .about__container{
+    background-color: var(--container-color);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgb(119 118 118 / 88%);
+  }
+
+  .contact__container{
+    background-color: var(--container-color);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgb(119 118 118 / 88%);
+  }
+
   
   
 
@@ -1207,6 +1244,13 @@ img {
 
   .about__img{
     width: 350px;
+    transition: .3s;
+    display: inline-flex;
+    background-color: #1D6C70;
+  }
+  
+  .about__img:hover{
+    transform: translateY(.2rem);
   }
 
   .about__description{
@@ -1269,7 +1313,7 @@ img {
   .project__container{
     background-color: var(--first-color);
     border-radius: 1rem;
-    padding: 3rem 2.5rem 0;
+    padding: 1rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
@@ -1336,7 +1380,9 @@ img {
 
   .contact__form{
     width: 460px;
+    margin-top: 1rem;
   }
+
 
   .portfolio__img{
     width: 300px;
