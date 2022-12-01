@@ -411,6 +411,7 @@ img {
   text-align: center !important;
   margin-bottom: var(--mb-2-5);
   font-weight: var(--font-semi-bold);
+  margin-top: 1rem;
 }
 
 .about__info{
