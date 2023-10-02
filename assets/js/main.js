@@ -1,7 +1,8 @@
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById("nav-menu")
-const navToggle = document.getElementById("nav-toggle")
-const navClose = document.getElementById("nav-close")
+const navMenu = document.getElementById("nav-menu");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
 
 
 
@@ -73,6 +74,8 @@ container.addEventListener("mousemove", (e) => {
     card.style.transform = `rotateY(170deg) rotateX(30deg)`;
  
   });
+
+  
 
 
   

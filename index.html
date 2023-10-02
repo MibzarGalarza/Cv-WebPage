@@ -25,6 +25,9 @@
     
 </head>
 <body>
+
+   
+    
     <div id="particles-js"></div>
      <!--==================== HEADER ====================-->
      <header class="header" id="header">
@@ -63,6 +66,42 @@
                             <i class="uil uil-message nav__icon"></i>Contact me
     
                         </a>
+                    </li>
+
+                    <span class="button button--flex services__button">
+                        Log In
+                    </span>
+    
+                    <div class="services__modal">
+                    <div class="services__modal-content">
+                        <h4 class="services__modal-title"> Log In</h4>
+                        <i class="uil uil-times services__modal-close"></i>
+
+                        <div class = "login-container">
+                            <div id= "main">
+                              <h1>Sign In</h1>
+                              <input id = "email" type = "text" placeholder = "Email"></input>
+                              <input id = "password" type = "password" placeholder = "Password"></input>
+                              <button id = "submit">Submit</button>
+                              <p><span>or</span></p>
+                              <button id = "sign-up">Sign Up</button>
+                            </div>
+                        
+                            <div id = "create-acct">
+                              <h1>Create an Account</h1>
+                              <input id = "email-signup" type = "text" placeholder = "Email *"></input>
+                          <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *"></input>
+                              <input id = "password-signup" type = "password" placeholder = "Password *"></input>
+                              <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *"></input>
+                              <button id = "create-acct-btn">Create Account</button>
+                              <button id = "return-btn">Return to Login</button>
+                            </div>
+                          </div>
+    
+                    </div>
+                </div>
+
+
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
@@ -80,6 +119,8 @@
 
     <!--==================== MAIN ====================-->
     <main class="main">
+
+     
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
@@ -115,6 +156,19 @@
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
+            </div>
+
+            <div id="contenido-visible">
+                <!-- Aquí colocas el contenido que se mostrará inicialmente -->
+                <h1>Bienvenido a mi sitio web</h1>
+                <p>Por favor, inicia sesión para ver más contenido.</p>
+                <!-- Agrega el formulario de inicio de sesión aquí si deseas -->
+            </div>
+    
+            <div id="contenido-oculto" style="display: none;">
+                <!-- Aquí colocas el contenido que deseas ocultar inicialmente -->
+                <h2>Contenido después de iniciar sesión</h2>
+                <p>Aquí puedes mostrar contenido adicional una vez que el usuario inicie sesión.</p>
             </div>
         </section>
 
@@ -478,6 +532,8 @@
                             <p>Programming language (php, python, sql and Node.js)</p>
                         </li>
 
+                        
+
                     </ul>
                 </div>
             </div>
@@ -724,6 +780,7 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/auth.js"></script>
 
     <script src="assets/js/particles.min.js"></script>
 </body>
